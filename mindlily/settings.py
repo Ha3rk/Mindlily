@@ -9,9 +9,17 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+import os
 from pathlib import Path
+from dotenv import load_dotenv
 
+load_dotenv() 
+
+
+
+YAPILY_ID = os.getenv('CLIENT_ID', 'default-secret-key')
+YAPILY_SECRET_KEY = os.getenv('CLIENT_SECRET', 'default-secret-key'
+)
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 

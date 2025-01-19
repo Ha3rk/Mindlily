@@ -1,0 +1,26 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spending List</title>
+    <!-- Link to the static CSS file -->
+    <link rel="stylesheet" href="{% static 'spending/styles.css' %}">
+</head>
+<body>
+
+<div class="container1">
+    <h1>Welcome to the Spending Tracker</h1>
+    <div class="spending-item">
+        <p>This is application takes your data from financial institutions (using Yapily) and uses Artificail intelligence (Openai gpt) to recommend adjustments towards better mental, financial, and overall health.</p>
+    </div>
+</div>
+</body>
+</html>
+{% endblock %}
